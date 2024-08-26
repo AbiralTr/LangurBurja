@@ -2,6 +2,8 @@
 #include <cstdlib>
 #include "board.hpp"
 
+using namespace std;
+
 class Player{
     private:
         int money = 0;

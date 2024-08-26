@@ -8,7 +8,7 @@ Board::Board(int p){
 };
 
 Board::Board(){
-
+    pot = 0;
 };
 
 Board::~Board(){}

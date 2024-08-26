@@ -1,13 +1,14 @@
 #pragma once
 #include <cstdlib>
 #include <string>
-#include "player.hpp"
 
 using namespace std;
 
+class Player;
+
 class Board{
     private:
-        int pot;
+        int pot = 0;
         string sections[6] = {"Crown", "Spade", "Club", "Flag", "Heart", "Diamond"};
     public:
         Board(int p);
