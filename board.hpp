@@ -11,6 +11,7 @@ class Board{
         string sections[6] = {"Crown", "Spade", "Club", "Flag", "Heart", "Diamond"};
     public:
         Board(int p);
+        Board();
         ~Board();
         void increasePool(int i, Player p);
         void decreasePool(int i, Player p);

@@ -8,7 +8,6 @@ class Player{
         Board board;
     public:
         Player(Board b);
-        Player();
         ~Player();
         int getMoney();
         void deposit(int i);

@@ -8,13 +8,13 @@ void generateDice(Dice list[]){
         Dice newDice = Dice();
         list[i] = newDice;
     }
-}
+};
 
 void printDiceList(Dice list[]){
     for(int i = 0; i < 6; i++){
         std::cout << i << ": " << list[i].getSymbol() << std::endl;
     }
-}
+};
 
 int main(){
 

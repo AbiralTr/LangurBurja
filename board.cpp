@@ -1,9 +1,14 @@
 #include "board.hpp"
+#include "player.cpp"
 
 // Board Definitions
 
 Board::Board(int p){
     pot = p;
+};
+
+Board::Board(){
+
 };
 
 Board::~Board(){}
@@ -35,7 +40,7 @@ Dice::~Dice(){
 string Dice::getSymbol()
 {
     return symbol;
-}
+};
 
 void Dice::roll(){
     int random = rand() % 5;         // v1 in the range 0 to 99
