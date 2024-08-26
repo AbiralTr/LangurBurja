@@ -1,7 +1,6 @@
 #include <cstdlib>
 #include <iostream>
 #include "board.hpp"
-#include "player.hpp"
 
 void generateDice(Dice list[]){
     for(int i = 0; i < 6; i++){

@@ -1,5 +1,5 @@
 #include "board.hpp"
-#include "player.cpp"
+#include "player.hpp"
 
 // Board Definitions
 
@@ -46,5 +46,4 @@ void Dice::roll(){
     int random = rand() % 5;         // v1 in the range 0 to 99
     symbol = symbols[random];
 };
-
 

@@ -1,5 +1,5 @@
 #include "player.hpp"
-#include "board.cpp"
+#include "board.hpp"
 
 Player::Player(Board b){
     board = b;

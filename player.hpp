@@ -1,6 +1,6 @@
 #pragma once
 #include <cstdlib>
-#include "board.cpp"
+#include "board.hpp"
 
 class Player{
     private:

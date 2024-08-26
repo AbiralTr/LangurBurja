@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdlib>
 #include <string>
-#include "player.cpp"
+#include "player.hpp"
 
 using namespace std;
 
