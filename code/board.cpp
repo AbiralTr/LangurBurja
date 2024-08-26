@@ -3,33 +3,43 @@
 // Board Definitions
 
 Board::Board(int p){
-    pool = p;
+    pot = p;
 };
 
 Board::~Board(){}
 
-void Board::increasePool(int i){
-
+void Board::increasePool(int i, Player p){
+    pot += i;
+    p.withdraw(i);
 };
 
-void Board::decreasePool(int i){
-
+void Board::decreasePool(int i, Player p){
+    pot -= i;
+    p.deposit(i);
 };
 
 int Board::getPool(){
-    return 0;
+    return pot;
 };
 
 // Dice Defintions
 
-Dice::Dice(string s){
-
+Dice::Dice(){
+    roll();
 };
 
 Dice::~Dice(){
 
 };
 
-void Dice::roll(){
+string Dice::getSymbol()
+{
+    return symbol;
+}
 
+void Dice::roll(){
+    int random = rand() % 5;         // v1 in the range 0 to 99
+    symbol = symbols[random];
 };
+
+
